@@ -1,0 +1,36 @@
+# ----
+# Site
+
+title: "Elder Scrolls: Legends API Documentation"
+description: "Documentation for the Elder Scrolls: Legends API at elderscrollslegends.io"
+url: https://docs.elderscrollslegends.io
+google_analytics_key:
+permalink: pretty
+
+collections:
+  documentation:
+    title: Documentation
+    position: 1
+  api_v1:
+    title: API (v1)
+    position: 2
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+types:
+  - get
+  - put
+  - delete
+  - post
