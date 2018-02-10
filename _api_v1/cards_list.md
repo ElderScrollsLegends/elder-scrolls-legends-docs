@@ -76,8 +76,11 @@ power
 health
 : The total health of the card
 
-set
-: The set the card belongs to
+set.id
+: The id of the set the card belongs to
+
+set.name
+: The name of the set the card belongs to
 
 soulSummon
 : The number of soul gems it costs to soul summon
@@ -108,6 +111,20 @@ The fields below are also part of the response (if not null), but cannot current
 imageUrl
 : The image url for a card.
 
+~~~ ruby
+require 'elder_scroll_legends_sdk'
+
+# Get all cards
+cards = ElderScrollsLegends::Card.all
+
+# Filter cards
+cards = ElderScrollsLegends::Card.where(type: 'creature', keywords: 'assemble|breakthrough')
+
+# Get specific page of data
+cards = ElderScrollsLegends::Card.where(page: 3)
+~~~
+{: title="ruby" }
+
 ~~~ bash
 # Get all cards
 curl "https://api.elderscrollslegends.io/v1/cards"
@@ -119,8 +136,3 @@ curl "https://api.elderscrollslegends.io/v1/cards?type=creature&keywords=assembl
 curl "https://api.elderscrollslegends.io/v1/cards?page=3"
 ~~~
 {: title="bash"}
-
-~~~ ruby
-# coming soon
-~~~
-{: title="ruby" }

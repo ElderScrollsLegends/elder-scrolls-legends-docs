@@ -19,10 +19,10 @@ The main files you will be working with are in the directories `_documentation` 
 To add a code section for an SDK, check the examples in the files of the `_api_v1` folder. Here is a brief example:
 
 ```
-~~~ python
-from elderscrollslegends import Card
+~~~ ruby
+require 'elder_scrolls_legends_sdk'
 
-card = Card.find('1fd81123ab3eca0b29c4c19757045db9757b4f1a')
+card = ElderScrollsLegends::Card.find('1fd81123ab3eca0b29c4c19757045db9757b4f1a')
 ~~~
-{: title="python" }
+{: title="ruby" }
 ```

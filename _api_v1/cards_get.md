@@ -35,12 +35,14 @@ right_code: |
 
 Returns a specific card by id
 
+~~~ ruby
+require 'elder_scrolls_legends_sdk'
+
+card = ElderScrollsLegends::Card.find('1fd81123ab3eca0b29c4c19757045db9757b4f1a')
+~~~
+{: title="ruby" }
+
 ~~~ bash
 curl "https://api.elderscrollslegends.io/v1/cards/1fd81123ab3eca0b29c4c19757045db9757b4f1a"
 ~~~
 {: title="bash"}
-
-~~~ ruby
-# coming soon
-~~~
-{: title="ruby" }
