@@ -42,6 +42,13 @@ card = ElderScrollsLegends::Card.find('1fd81123ab3eca0b29c4c19757045db9757b4f1a'
 ~~~
 {: title="ruby" }
 
+~~~ python
+from elderscrollslegendssdk import Card
+
+card = Card.find('1fd81123ab3eca0b29c4c19757045db9757b4f1a')
+~~~
+{: title="python" }
+
 ~~~ bash
 curl "https://api.elderscrollslegends.io/v1/cards/1fd81123ab3eca0b29c4c19757045db9757b4f1a"
 ~~~

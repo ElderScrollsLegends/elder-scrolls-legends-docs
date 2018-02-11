@@ -1,6 +1,6 @@
 ---
 title: /sets/:id
-position: 1.3
+position: 2.1
 type: get
 description: Get Set
 right_code: |
@@ -26,6 +26,13 @@ require 'elder_scrolls_legends_sdk'
 set = ElderScrollsLegends::Set.find('cs')
 ~~~
 {: title="ruby" }
+
+~~~ python
+from elderscrollslegendssdk import Set
+
+set = Set.find('cs')
+~~~
+{: title="python" }
 
 ~~~ bash
 curl "https://api.elderscrollslegends.io/v1/sets/cs"

@@ -45,7 +45,7 @@ right_code: |
 This call will return a maximum of 100 cards.
 {: .info }
 
-Paginate the response using the `page` parameter.
+Paginate the response using the `page` parameter. You can change the amount of cards returned with the `pageSize` parameter. Anywhere from 1-100 is valid.
 
 Each field below can be used as a query parameter. By default, fields that have a singular value such as rarity, type, and name will always use a logical "or" operator when querying with a list of values. Fields that can have multiple values such as attributes and keywords can use a logical "and" or a logical "or" operator.
 
@@ -124,6 +124,20 @@ cards = ElderScrollsLegends::Card.where(type: 'creature', keywords: 'assemble|br
 cards = ElderScrollsLegends::Card.where(page: 3)
 ~~~
 {: title="ruby" }
+
+~~~ python
+from elderscrollslegendssdk import Card
+
+# Get all cards
+cards = Card.all()
+
+# Filter cards
+cards = Card.where(type='creature', keywords='assemble|breakthrough')
+
+# Get specific page of data
+cards = Card.where(page=3) 
+~~~
+{: title="python" }
 
 ~~~ bash
 # Get all cards
