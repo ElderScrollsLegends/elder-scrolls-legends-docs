@@ -13,4 +13,6 @@ For example:
 
 `https://api.elderscrollslegends.io/v1/cards`
 
-There are multiple SDKs available to make it even easier to consume the API.
+There are multiple SDKs available to make it even easier to consume the API. To chat with other developers and discuss the API and SDKs, checkout the Discord Server!
+
+[![esl-developers on discord](https://img.shields.io/badge/discord-esl--developers-738bd7.svg)](https://discord.gg/97vDaJx)
