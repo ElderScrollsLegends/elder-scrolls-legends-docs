@@ -9,7 +9,7 @@ right_code: |
     "name": "Alduin",
     "rarity": "Legendary",
     "type": "Creature",
-    "subtype": "Dragon",
+    "subtypes": ["Dragon"],
     "cost": 20,
     "power": 12,
     "health": 12,

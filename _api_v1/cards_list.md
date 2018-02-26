@@ -11,7 +11,7 @@ right_code: |
         "name": "Adoring Fan",
         "rarity": "Legendary",
         "type": "Creature",
-        "subtype": "Wood Elf",
+        "subtypes": ["Wood Elf"],
         "cost": 3,
         "power": 0,
         "health": 1,
@@ -64,8 +64,8 @@ rarity
 type
 : The type of the card (ex. Action, Creature, Item, Support)
 
-subtype
-: The subtype of the card (ex. Argonian, Dragon, Imperial)
+subtypes
+: The subtypes of the card (ex. Argonian, Dragon, Imperial)
 
 cost
 : How much it costs to cast the card
